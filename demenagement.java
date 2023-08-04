@@ -21,6 +21,13 @@ public class demenagement {
             }
             System.out.println("cartons restant dans la maison : "+box);
             System.out.println("cartons dans nouveau local : "+new_location);
+
+            if(box_in_truck == 0 && new_location < 34){
+                System.out.println("je suis vide je retourne a l'ancien local... vrooooom");
+            }
+        }
+        if(box_in_truck == 0 && new_location == 34){
+            System.out.println("le déménagement est fini");
         }
     }
 }
